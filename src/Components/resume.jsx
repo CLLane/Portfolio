@@ -7,7 +7,9 @@ export const Resume = () => {
         <h1>Chris Lane</h1>
         <p>Software Developer</p>
       </aside>
-      <article></article>
+      <article>
+        
+      </article>
     </main>
   )
 }

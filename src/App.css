@@ -1,20 +1,36 @@
 main {
-  background-color: black;
-  width: 100%;
-  height: 100vh;
+ display: flex;
 }
 
-.greeting {
-  width: 100%;
-  height: 100%;
-  color: white;
-  background-image: url("https://process.studio/wp-content/uploads/2017/09/archdiploma_black.gif");
-  background-repeat: no-repeat;
-  background-size: 50%;
-  background-position-y: -150px;
-  background-position-x: center;
+.avatar {
+  height: 200px;
+  width: 200px;
+  border-radius: 8px;
+}
+.typewriter {
   display: flex;
-  align-items: center;
-  padding-top: 250px;
-  flex-direction: column;
+  align-items: flex-end;
+
+}
+
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 4.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  30% { border-color: orange; }
 }
